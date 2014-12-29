@@ -1,0 +1,348 @@
+/** offset all the other colors */
+/*Colors*/
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  font-size: 12px;
+  line-height: 22px;
+  background: #eeeeee;
+  background-attachment: fixed;
+  color: #333333;
+  cursor: pointer;
+  /* fix for IOS */
+  margin-top: 15px;
+}
+.form-control,
+select {
+  background-color: transparent;
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #bbbbbb;
+  box-shadow: none;
+  color: inherit;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.form-control.customButton {
+  font-weight: bold;
+}
+#update {
+  /*Update span style*/
+  color: #33ffff;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  /* dont outline text boxes and buttons when they are selected*/
+}
+.startHidden {
+  /*used to initialy hide element so jquery can fade it in*/
+  display: none;
+}
+/* dont color hyperlinks*/
+a:link,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: inherit;
+}
+#menu {
+  background: #ffffff;
+  padding: 15px 30px;
+  overflow: hidden;
+  font-size: 18px;
+  border-radius: 4px;
+  /*round the corners*/
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.titleBar {
+  background: #ffffff;
+  padding: 15px 30px;
+  overflow: hidden;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 4px;
+  /*round the corners*/
+}
+#folderTitleBar {
+  padding: 15px 0px;
+  overflow: hidden;
+  font-size: 18px;
+}
+#folderTitle {
+  float: left;
+  padding-right: 15px;
+  font-size: 20px;
+}
+.customButton {
+  /*custom button class that removes all browser formating*/
+  border: none;
+  background: transparent;
+  overflow: hidden;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border-radius: 4px;
+  /*round the corners*/
+}
+a.customButton,
+a.customButton.folder {
+  line-height: 3ex !important;
+  display: inline !important;
+  color: #000000;
+}
+.customButton:hover,
+a.customButton.folder:hover {
+  color: #ffffff;
+  background: #000000;
+}
+img {
+  border: none;
+  /*stupid IE*/
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+#sideBar {
+  background: #ffffff;
+  /*round the corners*/
+  border-radius: 4px ;
+  margin-bottom: 15px;
+}
+.box {
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  float: left;
+  margin: 0 10px 10px 0;
+  background-color: #0f92d6;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  /*round the corners*/
+}
+.box:hover {
+  /*overiding css when up class is present*/
+  background: #28acf0;
+}
+.box_description {
+  height: 80px;
+  overflow: hidden;
+}
+#itemClass_description {
+  border: none;
+  background: transparent;
+  height: 80px;
+  width: 100%;
+  overflow: auto;
+  resize: none;
+  /* copied from div.event */
+  color: inherit;
+  /*inherit from parrent*/
+  /*coped from body to prevent glitch*/
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.big,
+.big:hover {
+  width: auto;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+  /*reset from box*/
+  background-color: #0f92d6;
+  overflow: hidden;
+  float: none;
+}
+.folder {
+  /*overiding css when up class is present*/
+  background: #72bf33;
+  /*green*/
+}
+.folder:hover {
+  /*overiding css when up class is present*/
+  background: #8cd154;
+}
+.search,
+.search:hover {
+  background-color: #8d40cc;
+}
+.searchPartial {
+  margin-bottom: 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px 0;
+  font-weight: normal;
+}
+.inputField {
+  border: none;
+  background: transparent;
+  overflow: hidden;
+  resize: none;
+  /* copied from div.event */
+  color: inherit;
+  /*inherit from parrent*/
+  /*coped from body to prevent glitch*/
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  width: 80%;
+}
+.smallInputField {
+  width: 35px;
+}
+/*override*/
+.options {
+  position: absolute;
+  /*Always putting the option on the bottom*/
+  width: 93%;
+  bottom: 0px;
+}
+.bar .options {
+  /*override*/
+  width: 98%;
+}
+.noPadding {
+  padding: 0;
+}
+.noMargin {
+  margin: 0;
+}
+.noShadow {
+  box-shadow: none;
+}
+/*Tree styles*/
+.btn {
+  margin-right: 8px;
+  border: none;
+  height: 20px;
+  width: 15px;
+  background: #72bf33;
+}
+.btn.collapsed {
+  background: none;
+  border-style: solid;
+  border-color: #72bf33;
+  border-width: 1px;
+}
+.angular-ui-tree-handle {
+  color: #000000;
+  padding: 10px 10px;
+}
+.angular-ui-tree-handle:hover {
+  color: #438eb9;
+  background: #f4f6f7;
+  border-color: #dce2e8;
+}
+.angular-ui-tree-placeholder {
+  background: #f0f9ff;
+  border: 2px dashed #bed2db;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.tree-node-content {
+  margin: 10px;
+}
+.angular-ui-tree-empty {
+  display: none;
+}
+/*Login*/
+form label {
+  display: block;
+}
+input {
+  padding: 8px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #bbbbbb;
+  border-radius: 0px;
+  background-color: inherit;
+}
+.button {
+  padding: 8px;
+  background-color: #0f92d6;
+  width: auto !important;
+  border: 0;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0px;
+  border-radius: 4px;
+  /*round the corners*/
+}
+.button:hover {
+  background: #000000;
+}
+a.button {
+  text-decoration: none;
+}
+#login {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+#register {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+#userAvailability {
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+div.loginPartial {
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.homeBox {
+  background-color: #ffffff;
+  padding: 30px 50px;
+  margin-right: 15px;
+  font-size: 25px;
+  overflow: hidden;
+  float: left;
+  color: #0f92d6;
+  border-radius: 4px;
+  /*round the corners*/
+}
+.homeBox:hover {
+  background-color: #0f92d6;
+  color: #ffffff;
+  cursor: pointer;
+}
+.homeBoxText:hover {
+  cursor: pointer;
+}
+a {
+  color: #0f92d6;
+}
+.clear {
+  clear: both;
+}
+#copyRight {
+  color: #9a9a9a;
+}
+.loginPartial form input {
+  width: 250px;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "OpenHue",
+  "authors": [
+    "Jacob Liscom <https://github.com/FoxUSA>"
+  ],
+  "description": "A small self contained Hue controller",
+  "version": "15.01.0",
+  "dependencies": {
+    "jquery": "2.0.3",
+    "bootstrap": "3.1.1",
+    "angular": "1.2.21",
+    "angular-route": "1.2.21",
+    "angular-resource": "1.2.21",
+    "angular-sanitize": "1.2.21",
+    "angular-animate": "1.2.21",
+    "angular-mocks": "1.2.21",
+    "alertify": "0.3.10",
+    "intro.js": "0.8.0"
+  }
+}
