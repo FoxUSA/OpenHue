@@ -6,5 +6,10 @@ openHue.config(function($routeProvider){
 				controller: "setupController",
 				templateUrl: "openHue/partials/setupPartial.html"
 			})
+		.when("/lights",
+			{
+				controller: "lightsController",
+				templateUrl: "openHue/partials/lightsPartial.html"
+			})
 		.otherwise({ redirectTo: "/" });
 });

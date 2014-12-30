@@ -346,3 +346,13 @@ a {
 .loginPartial form input {
   width: 250px;
 }
+
+.options{
+	transition: all 1s;
+	color:#fff;
+}
+
+.options.blackText{
+	transition: all 1s;
+	color:#000 !important;
+}

@@ -12,7 +12,7 @@ openHue.service("apiService", function ($http, config) {
 	 * Get API object
 	 */
 	this.getAPI = function(){
-		return localStorage.getItem("api");
+		return angular.fromJson(localStorage.getItem("api"));
 	};
 	
 	/**
@@ -39,7 +39,7 @@ openHue.service("apiService", function ($http, config) {
 	 * Set the API object
 	 */
 	this.setAPI=function(api){
-		return localStorage.setItem("api",api);
+		return localStorage.setItem("api",angular.toJson(api));
 	};
 	
 	/**
@@ -50,7 +50,7 @@ openHue.service("apiService", function ($http, config) {
 		return $http.get(this.apiToURL(api)).then(
 			function(response){//Successful
 				if(response.status==200)
-					return response.data.indexOf("error") > -1;	//TODO check if its an error
+					return response.data;	//TODO check if its an error
 				throw response.status;
 			},
 			function(response){

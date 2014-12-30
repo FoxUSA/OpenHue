@@ -1,7 +1,7 @@
 /**
  *randomly fade in element to have a wave effect 
  */
-openHue.directive("randomFadeInDirective", function($timeout,config) {
+openHue.directive("randomFadeInDirective", function(config) {
 	return {
 		restrict: "C",//class
 		link: function(scope, element, attrs) {

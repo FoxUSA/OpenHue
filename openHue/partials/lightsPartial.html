@@ -1,0 +1,15 @@
+<div class="folderPartial">
+	<div id="folderTitleBar">
+		<div id="folderTitle" ng-click="activateFolderEditMode();" data-intro="{{helpContent.folderEditModeButton}}">Lights</div>
+	</div>
+	
+	<div ng-Repeat="light in lights" class="startHidden randomFadeInDirective box folder" ng-click="loadLight(load);" ng-show="light.state.reachable">
+		<h4>
+			{{light.name}}
+		</h4>
+		<p class="box_description"></p>
+		<p class="options" ng-click="toggleLightOnState($index,light)" ng-class="{'blackText':!light.state.on}">
+			{{light.state.on?"On":"Off";}}
+		</p>
+	</div>
+</div>
